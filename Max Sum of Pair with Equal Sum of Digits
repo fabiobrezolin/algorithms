@@ -1,0 +1,15 @@
+class Solution:
+    def maximumSum(self, nums: List[int]) -> int:
+        digit_sum_map = {}  # Dicionário para armazenar o maior número para cada soma de dígitos
+        max_sum = -1  # Inicializamos com -1 (caso não haja pares)
+
+        for num in nums:
+            digit_sum = sum(int(d) for d in str(num))  # Calcula a soma dos dígitos
+            
+            if digit_sum in digit_sum_map:
+                max_sum = max(max_sum, num + digit_sum_map[digit_sum])  # Atualiza maior soma encontrada
+            
+            # Atualiza o maior número com essa soma de dígitos
+            digit_sum_map[digit_sum] = max(num, digit_sum_map.get(digit_sum, 0))
+        
+        return max_sum
