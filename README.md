@@ -11,3 +11,5 @@
 [14/02/2025] Resolução do problema Median of Two Sorted Arrays
 
 [18/02/2025] Rsolução Longest Palindromic Substring 
+
+[20/02/2025] Rsolução Zigzag Conversion
