@@ -17,3 +17,5 @@
 [22/02/2025] Resolução Reverse Integer 
 
 [07/03/2025] Resolução String to integer 
+
+[07/03/2025] Resolução Palindrome Number
